@@ -2,6 +2,7 @@
 Cloud Computing developmet for Mobile SIBI Translator Mobile App. 
 
 ## Deployment
+
 Requirements:
 - Tensorflow 2.2.0
 - Numpy 1.20.3 
@@ -24,7 +25,15 @@ Our server is vulnerable because we only have 1 VM to serve the API. We planned 
 
 
 ## ML API 
+
 ![Plan_A_Prediction_Implementation](https://user-images.githubusercontent.com/79360300/121163761-41795200-c879-11eb-893d-82856599a2d4.jpg)
+
 We use Flask as micro web framework. Flask written in Python. We use it because simple, extensible, and flexible. The API can be accessed through http://34.101.121.113:80/ . To perform prediction go to '/predict' route. 
 
 Mobile App will send json file consist of hand coordinate to API. The server will do the machine learning to predict the alphabet. The API will return hand coordinate and aplphabet prediction in json file. 
+
+## Billing Report
+
+![final billing](https://user-images.githubusercontent.com/79360300/121308414-3bdc4480-c92b-11eb-848d-825b767cf654.jpg)
+
+Through this capstone project we used $20.84 GCP Billing. Most of it go to Compute Engine, and omly $0.01 go to Cloud Storage to store the dataset.
